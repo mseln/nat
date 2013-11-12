@@ -1,3 +1,6 @@
+// All pairs shortest path (Floyd Warshall). Assign nodes which are part of a
+// negative cycle to minus infinity.
+
 #include <stdio.h>
 #include <iostream>
 #include <vector>

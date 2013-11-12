@@ -1,0 +1,44 @@
+Interval coverage                                   √
+Longest increasing subsequences                     √
+Union Find                                          √
+Fenwick                                             √
+String Matching
+String multi matching
+Suffix sort
+
+Dijkstra                                            √
+Dijkstra Timetable                                  √
+Bellman Ford                                        √
+Floyd Warshall                                      √
+Minimum Spanning Tree                               √
+Maximum Flow
+Minimal Cut
+Minimal Cost Maximum flow
+Euler Path
+
+Rational Numbers                                    √
+Modular Arithmetic                                  √
+Linear Equation Systems with a Unique Solution
+Linear Equation Systems without a Unique Solution
+Chinese Reminder Theorem - Relative Prime
+General Chinese Reminder Theorem
+Prime Sieve                                         √
+Integer Factorization                               √
+
+Point Class
+Point in Polygon
+Intersection of Line Segments
+Distance between Line Segments
+Point Sets - Closest Pair of Points - Average Case
+Point Sets - Closest Pair of Points - Worst Case
+Point Sets - Convex Hull
+Point Sets - Maximal Set of Colinear Points
+Linear Recurrences 
+
+
+Binary search                                       √
+Graham scan
+Kadanes algorithm
+Longest common subsequence
+Traveling salesman
+2-Sat
