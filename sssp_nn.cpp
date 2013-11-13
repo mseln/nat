@@ -8,19 +8,22 @@ using namespace std;
 
 typedef pair<int, int> ii;
 
+template<class T>
+
 class comp{
 public:
-    int operator()(const ii& a, const ii& b){return (a.second > b.second);}
+    int operator()(const pair<int, T> & a, const pair<int, T> & b){return (a.second > b.second);}
 };
 
-vector<int> dijkstras(vector<ii> G[], int n, int e, int s){
-    priority_queue<ii, vector<ii>, comp> Q;
+template<class T>
+vector<T> dijkstras(vector<pair<int, T> > G[], int n, int e, int s){
+    priority_queue<pair<int, T> , vector<pair<int, T> >, comp> Q;
 
-    vector<int> c; for(int i = 0; i < n; i++) c.push_back(INF); c[s] = 0;
+    vector<T> c; for(int i = 0; i < n; i++) c.push_back(INF); c[s] = 0;
     vector<int> p; for(int i = 0; i < n; i++) p.push_back(-1);
     
-    Q.push(ii(s, c[s]));
-    int u, sz, v, w;
+    Q.push(pair<int, T>(s, c[s]));
+    int u, sz, v; T w;
     while(!Q.empty()){
         
         u = Q.top().first; Q.pop();
@@ -31,7 +34,7 @@ vector<int> dijkstras(vector<ii> G[], int n, int e, int s){
             if( c[v] > c[u] + w ){
                 c[v] = c[u] + w;
                 p[v] = u;
-                Q.push(ii(v, c[v]));
+                Q.push(pair<int, T>(v, c[v]));
             }
         }
     }

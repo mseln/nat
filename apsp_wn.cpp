@@ -9,7 +9,9 @@
 #define INF 1000000000
 using namespace std;
 
-vector< vector <int> > floyd_warshall(vector< vector<int> > d, int n){
+template<class T>
+vector< vector <T> > floyd_warshall(vector< vector<T> > d){
+    int n = d.size();
     for(int i = 0; i < n; i++) d[i][i] = 0;
 
     for (int k = 0; k < n; k++)

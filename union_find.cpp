@@ -12,12 +12,7 @@ int find(int * root, int x){
 void uni(int * root, int * deep, int x, int y){
 	int a = find(root, x); 
 	int b = find(root, y);
-	if (deep[a] < deep[b]) root[a] = b;
-	if (deep[a] > deep[b]) root[b] = a;
-	if (deep[a] == deep[b]) {
-		root[b] = a; 
-		deep[a] += 1;
-	}
+	root[a] = b;
 }
 
 bool issame(int * root, int a, int b){
@@ -26,10 +21,9 @@ bool issame(int * root, int a, int b){
 
 int main(){
 	int n, no; scanf("%d%d", &n, &no);
-	int root[n], deep[n];
+	int root[n];
 	for(int i = 0; i < n; i++){
 		root[i] = i;
-		deep[i] = 0; 
 	}
 
 	for(int i = 0; i < no; i++){
@@ -43,5 +37,4 @@ int main(){
 		if(op == '=')
 			uni(root, deep, a, b);
 	}
-
 }
