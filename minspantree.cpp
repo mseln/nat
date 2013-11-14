@@ -44,7 +44,7 @@ struct Edge{
 };
 
 
-Tree mst(Vertex * v, Edge * e, int numv, int nume){
+Tree kruskal(Vertex * v, Edge * e, int numv, int nume){
 	Tree ans;
 	int sum = 0;
 
