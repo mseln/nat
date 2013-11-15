@@ -25,12 +25,12 @@ typedef vector<int> vi;
 
 bool solve(){
 
-	return true;
+    return true;
 }
 
 int main(){
-	int tc=1; //scanf("%d", &tc);
-	rep(i, 0, tc) solve();
+    int tc=1; //scanf("%d", &tc);
+    rep(i, 0, tc) solve();
 
-	return 0;
+    return 0;
 }
