@@ -1,5 +1,4 @@
 # Ignore files without extention
-*
 !*.*
 
 # Compiled Object files
