@@ -2,9 +2,9 @@
 
 template<class T>
 class Vector{
-private:
-    T x, T y;
 public:
+
+    T x, y;
     Vector(){};
     Vector(T a, T b){x = a; y = b};
 
