@@ -18,7 +18,7 @@ Euler Path                                          √
 
 Rational Numbers                                    √
 Modular Arithmetic                                  √
-Linear Equation Systems with a Unique Solution
+Linear Equation Systems with a Unique Solution      √
 Linear Equation Systems without a Unique Solution
 Chinese Reminder Theorem - Relative Prime
 General Chinese Reminder Theorem
