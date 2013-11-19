@@ -11,10 +11,10 @@ Dijkstra Timetable                                  √
 Bellman Ford                                        √
 Floyd Warshall                                      √
 Minimum Spanning Tree                               √
-Maximum Flow
+Maximum Flow                                        √
 Minimal Cut
 Minimal Cost Maximum flow
-Euler Path
+Euler Path                                          √
 
 Rational Numbers                                    √
 Modular Arithmetic                                  √
