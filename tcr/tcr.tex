@@ -12,13 +12,17 @@
 \setlength\columnseprule{0.5pt}
 \setlength\parindent{0pt}
 
+\title{TCR: Wir werden nach Delft fahren}
+\date{November 22, 2013}
+\author{Filip Stromback, Magnus Selin, Carl Einarson}
+
 \lstset{
             language=C++,
-            basicstyle=\tiny,
+            basicstyle=\scriptsize,
             numberstyle=\tiny,numbers=left,
             keywordstyle=\color{blue}\ttfamily,
             stringstyle=\color{red}\ttfamily,
-            commentstyle=\color{green}\ttfamily,
+            commentstyle=\color{black}\ttfamily,
             showspaces=false,showtabs=false,
             xleftmargin=0.7cm, xrightmargin=0.5cm,
             breaklines=true
@@ -27,42 +31,44 @@
         }
 
 \begin{document}
+\maketitle
 \begin{multicols}{2}
 \tableofcontents
 \end{multicols}
 \newpage
-\tiny
+\scriptsize
+
 
 
 \begin{multicols}{3}
 
 \section{Environment}
 \subsection{Template}
-\lstinputlisting{../template.cpp}
+\lstinputlisting{../environment/template.cpp}
 
 \section{Data Structures}
 \subsection{Union Find}
-\lstinputlisting{../union_find.cpp}
+\lstinputlisting{../data_structures/union_find.cpp}
 
 
 \subsection{Fenwick Tree}
-\lstinputlisting{../fenwick.cpp}
+\lstinputlisting{../data_structures/fenwick.cpp}
 
 \section{Numerical}
 \subsection{Rational Numbers Class}
-\lstinputlisting{../rat_num.cpp}
+\lstinputlisting{../numerical/rat_num.cpp}
 
 \subsection{Binary Search}
-\lstinputlisting{../bsearch.cpp}
+\lstinputlisting{../numerical/bsearch.cpp}
 
 \subsection{De Brujin}
-\lstinputlisting{../debrujin.cpp}
+\lstinputlisting{../numerical/debrujin.cpp}
 
 \subsection{Prime Generator}
-\lstinputlisting{../prime_gen.cpp}
+\lstinputlisting{../numerical/prime_gen.cpp}
 
 \subsection{Factorisation}
-\lstinputlisting{../factorize.cpp}
+\lstinputlisting{../numerical/factorize.cpp}
 
 
 
@@ -71,43 +77,63 @@
 \subsection{Single Source Shortest Path}
 Dijkstra's algorithm \newline
 Time Complexity $O(E + V\log V)$
-\lstinputlisting{../sssp_nn.cpp}
+\lstinputlisting{../graphs/sssp_nn.cpp}
 
 \subsection{Single Source Shortest Path Time Table}
 Single Source Shortest Path Time Table (Dijkstra)  \newline
 Time Complexity $O(E + V\log V)$
-\lstinputlisting{../sssp_tt.cpp}
+\lstinputlisting{../graphs/sssp_tt.cpp}
 
-\subsection{All pairs shortest path}
+\subsection{All Pairs Shortest Path}
 Floyd Warshall's algorithm. Assign nodes which are part of a negative cycle to minus infinity. \newline
 Time Complexity $O(V^3)$
-\lstinputlisting{../apsp_wn.cpp}
+\lstinputlisting{../graphs/apsp_wn.cpp}
 
 \subsection{Minimum Spanning Tree}
-\lstinputlisting{../minspantree.cpp}
+Time Complexity $O(E + V\log V)$
+\lstinputlisting{../graphs/minspantree.cpp}
 
 \subsection{Maximum Flow}
-\lstinputlisting{../maximum_flow.cpp}
+Edmonds Karp's Maximum Flow Algorithm \newline
+Input:               Adjacency Matrix (res) \newline
+Output:              Maximum Flow \newline
+Time Complexity:     $O(VE^2)$
+
+\lstinputlisting{../graphs/maximum_flow.cpp}
 
 \subsection{Euler Tour}
-\lstinputlisting{../euler_tour.cpp}
+Time Complexity $O(E + V)$
+\lstinputlisting{../graphs/euler_tour.cpp}
 
 \section{String processing}
+
+
 \subsection{String Matching}
-\lstinputlisting{../string_match.cpp}
+\lstinputlisting{../string_processing/string_match.cpp}
 
 
 \section{Geometry}
 \subsection{Points Class}
-\lstinputlisting{../points.cpp}
+\lstinputlisting{../geometry/points.cpp}
+
+\subsection{Transformation}
+\lstinputlisting{../geometry/matrix.cpp}
+
+\subsection{Points Class}
+\lstinputlisting{../geometry/transformation.cpp}
 
 \subsection{Graham Scan}
-\lstinputlisting{../grahams_scan.cpp}
+\lstinputlisting{../geometry/grahams_scan.cpp}
 
 \subsection{Convex Hull}
-\lstinputlisting{../convex_hull.cpp}
+\lstinputlisting{../geometry/convex_hull.cpp}
 
+\section{Misc}
+\subsection{Longest Increasing Subsequence}
+\lstinputlisting{../misc/lis.cpp}
 
+\subsection{Longest Increasing Substring}
+\lstinputlisting{../misc/lcs.cpp}
 
 \end{multicols}
 \end{document}

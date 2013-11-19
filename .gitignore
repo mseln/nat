@@ -1,6 +1,10 @@
 # Ignore files without extention
 *
 !*.*
+!*/
+
+.DS_Store
+a.out
 
 # Compiled Object files
 *.slo
@@ -20,3 +24,7 @@ a.out
 *~
 build/
 
+# Tex files
+*.aux
+*.toc
+*.log

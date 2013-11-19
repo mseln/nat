@@ -1,8 +1,3 @@
-// Edmonds Karp's Maximum Flow Algorithm
-// Input:               Adjacency Matrix (res)
-// Output:              Maximum Flow
-// Time Complexity:     O(VE^2)
-
 int res[MAX_V][MAX_V], mf, f, s, t;
 vi p;
 
