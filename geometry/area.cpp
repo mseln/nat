@@ -1,6 +1,7 @@
-// area.cpp
-// Calculate the area of an arbitrary polygon
-// <vector> and "geometry.cpp" must be included
+/* Calculate the area of an arbitrary polygon
+ * <vector> and "geometry.cpp" must be included
+ * source: Magnus Selin
+ */
 
 template <class T>
 int area(vector<Vector<T> > v){
